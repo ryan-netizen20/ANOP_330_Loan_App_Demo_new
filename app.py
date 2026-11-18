@@ -8,7 +8,7 @@ import pandas as pd
 import pickle
 
 # --- Page setup (must be the first Streamlit command) ---
-st.set_page_config(page_title="Ryan Carson's Loan Default ML Predictor", layout="centered")
+st.set_page_config(page_title="Loan Default ML Predictor", layout="centered")
 
 # --- Open the file and load the model ---
 file_to_load = 'model.pkl'
@@ -16,7 +16,7 @@ with open(file_to_load, 'rb') as file:
     loaded_model = pickle.load(file)
 
 # --- Streamlit UI ---
-st.title("Loan Default Prediction")
+st.title("Ryan Carson's Loan Default Prediction")
 st.markdown("Enter a potential loan customer's details to predict their risk of default.")
 
 # User input. The ranges match the data the model was trained on.
