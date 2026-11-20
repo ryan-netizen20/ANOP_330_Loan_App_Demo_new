@@ -18,7 +18,7 @@ with open(file_to_load, 'rb') as file:
 # --- Streamlit UI ---
 st.title("Ryan Carson and Mac Jordan's Credit Risk Assessor")
 st.markdown("Enter a potential loan customer's details to predict their risk of default.")
-'''
+
 # User input. The ranges match the data the model was trained on.
 ownhome = st.checkbox("Owns their home?")
 income = st.number_input("Annual income ($)", min_value=10000, max_value=300000, value=65000, step=1000)
@@ -62,6 +62,6 @@ if st.button("Predict Loan Default"):
     )
     st.write("Prediction breakdown:")
     st.bar_chart(chart_data)
-'''
+
 st.markdown("---")
 st.markdown("**Developed by Ryan Carson and Mac Jordan for ANOP 330 Final Project** | Powered by Streamlit")
